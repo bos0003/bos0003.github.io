@@ -1,0 +1,102 @@
+<!doctype html>
+
+<html>
+    <head>
+        <title>Average White Band</title>
+        <link rel="stylesheet" type="text/css" href="styles.css">
+    </head>
+    
+    <body>
+		
+        <script>
+            var index = 0;
+            
+            document.body.onkeydown = function (e)
+            {
+                var maxIndex = document.getElementsByClassName("section").length;
+                
+                switch (e.keyCode)
+                {
+                    case 87:
+                        index--;
+                        break;
+
+                    case 83:
+                        index++;
+                        break;
+                    case 81:
+                        index = 0;
+                        break;
+                    case 69:
+                        index = maxIndex;
+                        break;
+                }
+                
+                if (index < 0)
+                    index = 0;
+                
+                if (index > maxIndex)
+                    index = maxIndex;
+                
+                window.scroll({top: window.innerHeight * index * 1, left: 0, behavior: 'smooth'});
+                
+                console.log("Scroll index = " + index.toString());
+            }
+            
+        </script>
+        
+		<div class="background">
+			<img src="https://cdn.discordapp.com/attachments/308868050348802050/540741773643743250/p01bqq6g.png">
+		</div>
+		
+        <div class="title">
+            <img src="https://static1.squarespace.com/static/594a72ecbe659412fad81c3c/t/594af4ace58c629baf78ea91/1513555482038/?format=1500w">
+        </div>
+        
+        <div class="content">
+            <div class="section">
+                <h1>Another Title...</h1>
+
+                <p>Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. </p>
+            </div>
+            
+            <div class="section">
+                <h1>Another Title...</h1>
+
+                <p>Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. </p>
+            </div>
+            
+            <div class="section">
+                <h1>Another Title...</h1>
+
+                <p>Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. </p>
+            </div>
+            
+            <div class="section">
+                <h1>Another Title...</h1>
+
+                <p>Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. </p>
+            </div>
+		
+			<? FOR NEW TEXT, COPY FROM HERE ?>
+            <div class="section">
+                <h1>Another Title...</h1>
+
+                <p>Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. </p>
+				
+				<div class="video">
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/FnH_zwVmiuE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				</div>
+				
+				<div id="photos">
+					<img src="pictures/placeholders.PNG">
+					<img src="pictures/placeholders.PNG">
+					<img src="pictures/placeholders.PNG">  
+				</div>
+				
+            </div>
+			<? TO HERE AND PASTE BELOW?>
+			
+        </div>
+    </body>
+</html>

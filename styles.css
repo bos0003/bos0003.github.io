@@ -1,0 +1,328 @@
+@import url('https://fonts.googleapis.com/css?family=Lobster|Oswald|Raleway');
+
+html
+{
+    scroll-behavior: smooth;
+}
+
+div
+{
+    font-family:'Oswald',monospace;
+    text-align:center;
+    color: #555;
+    margin: 0;
+}
+
+.video
+{
+    margin-right: 35vw;
+    margin-left: 35vw;
+    height: 315px;
+    border-radius: 15%;
+    transform: scale3d(1, 1, 1);
+    transition: all .25s ease;
+    
+}
+
+.video:hover
+{
+    transform: scale3d(1.2, 1.2, 1.2);
+    transition: all .25s ease;
+}
+q
+span
+{
+    color:white;
+}
+
+.background img
+{
+    display: block;
+    position: fixed;
+    height: 100vh;
+    z-index: -10;
+}
+
+
+
+.header.Hidden
+{
+    transform: translate3d(0, -20vw, 0);
+    transition: transform 1s ease;
+}
+
+.header
+{
+    padding-top: 1vw;
+    padding-bottom: 3vw;
+    border: 0px;
+    margin: 0px;
+    position: fixed;
+    background-color: #FCFF00;
+    width: 100vw;
+    height: 15vw;
+    z-index: 100;
+    transition: transform 1s ease;
+}
+
+.header h1
+{
+    display: block;
+    float: left;
+    
+    padding-left: 2vw;
+    padding-top: 2vw;
+    padding-bottom: 0px;
+    vertical-align: middle;
+    text-align: left;
+    font-size: 2vw;
+    text-transform: uppercase;
+    line-height: 0px;
+}
+
+.header h4
+{
+    display: block;
+    float: left;
+    clear: left;
+    
+    padding-top: 0px;
+    padding-left: 2vw;
+    line-height: 0px;
+    text-align: left;
+    font-size: 1vw;
+    text-transform: uppercase;
+}
+
+.header ul
+{
+    list-style: none;
+    
+    display: block;
+    text-align: right;
+    padding-right: 10vw;
+    padding-top: 1vw;
+    padding-left: 
+    text-transform: uppercase;
+    word-spacing: 5vw;
+    font-size: 1.5vw;
+}
+
+.header li
+{
+    display: inline;
+    padding-left: 2vw;
+    padding-top: 0vw;
+    text-transform: uppercase;
+}
+
+.header a
+{
+    text-decoration: none;
+    color: #555;
+}
+
+.header a:hover
+{
+    color: #00E1FF;
+}
+
+
+
+
+
+.title
+{
+	color: dodgerblue;
+    height: 100vh;
+}
+
+.title img
+{
+    padding-top: 35vh;
+    width: 60%;
+}
+
+.title h1
+{
+    text-transform: uppercase;
+    line-height: 0;
+    animation: FadeInAndUp 1s 1;
+    animation-fill-mode: both;
+    font-size: 5vw;
+}
+
+#menu p
+{
+    font-family:'Lobster', 'Oswald',monospace; 
+    color: #00e1ff;
+    line-height: 3;
+    font-size: 1vw;
+    word-spacing: 4vw;
+    animation: FadeInAndUp 1s 1;
+    animation-delay: .5s;
+    animation-fill-mode: both;
+}
+
+.title a
+{
+    text-decoration: none;
+    color: #555;
+}
+
+.title a:hover
+{
+    text-decoration: none;
+    color: #00e1ff;
+}
+
+
+
+
+
+
+.content
+{
+    opacity: 1;
+    transform: scale(1, 1  , 1);
+}
+
+.content.margin
+{
+    opacity: 1;
+    transform: scale(1, 1  , 1);
+    margin-right: 10vw;
+    margin-left: 10vw;
+}
+
+
+
+
+
+.section:nth-child(odd)
+{
+    background-color: #EEE;
+}
+
+.section
+{
+    display: inline-flex;
+    flex-direction: column;
+    background-color: white;
+    height: 100vh;
+
+}
+
+.section p, .section h1
+{
+    margin: auto;
+    justify-content: center;
+}
+
+
+
+
+.content a
+{
+    text-decoration: none;
+    color: #000;
+}
+
+.content a:hover
+{
+    color: #00e1ff;
+}
+
+.content p
+{
+    padding-left: 20vw;
+    padding-right: 20vw;
+    font-size: 1vw;
+    font-family: 'Raleway', 'Oswald', monospace;
+    font-style: normal;
+}
+
+.content h1
+{
+    font-size: 5vw;
+    text-transform: uppercase;
+}
+
+
+
+
+
+#photos
+{
+    padding-left: 8vw;
+    padding-Right: 8vw;
+}
+
+#photos img
+{
+    width: 15vw;
+    height: 15vw;
+    object-fit: cover;
+    border-radius: 10%;
+    padding: 1vw;
+    transition: all .25s ease;
+}
+
+#photos img:hover
+{
+    transform: scale3d(1.15, 1.15, 1);
+    transition: all .25s ease;
+}
+
+#photos p:hover
+{
+    opacity: 1;
+}
+
+
+
+
+
+
+.footer
+{
+    padding-top: 2vw;
+    padding-bottom: 4vw;
+    background-color: #222;
+    color: #BBB;
+    line-height: 1vw;
+    font-size: 1vw;
+}
+
+.footer h1
+{
+    line-height: 7vw;
+    font-size: 3vw;
+}
+
+.footer a
+{
+    text-decoration: none;
+    color: #FFF;
+}
+
+.footer a:hover
+{
+    color: #00e1ff;
+}
+
+
+
+@keyframes FadeInAndUp
+{
+    from
+    {
+        transform: translate3d(0, 2vw, 0);
+        opacity: 0;
+    }
+    to
+    {
+        transform: translate3d(0, 0, 0);
+        opacity: 1;
+    }
+}
