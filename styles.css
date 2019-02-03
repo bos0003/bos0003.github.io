@@ -13,23 +13,6 @@ div
     margin: 0;
 }
 
-.video
-{
-    margin-right: 35vw;
-    margin-left: 35vw;
-    height: 315px;
-    border-radius: 15%;
-    transform: scale3d(1, 1, 1);
-    transition: all .25s ease;
-    
-}
-
-.video:hover
-{
-    transform: scale3d(1.2, 1.2, 1.2);
-    transition: all .25s ease;
-}
-q
 span
 {
     color:white;
@@ -210,6 +193,7 @@ span
     flex-direction: column;
     background-color: white;
     height: 100vh;
+    width: 100vw;
 
 }
 
@@ -250,6 +234,25 @@ span
 
 
 
+.content ol
+{
+    display: inline-block;
+}
+
+.content li
+{
+    display: inline-block;
+}
+
+.content li p
+{
+    width: 25vw;
+}
+
+
+
+
+
 
 
 #photos
@@ -270,13 +273,61 @@ span
 
 #photos img:hover
 {
-    transform: scale3d(1.15, 1.15, 1);
+    transform: scale3d(1.10, 1.10, 1);
     transition: all .25s ease;
 }
 
 #photos p:hover
 {
     opacity: 1;
+}
+
+
+
+
+
+
+.labeledGallery
+{
+    margin-left: 10vw;
+    margin-right: 10vw;
+}
+
+.labeledGallery ol
+{
+    padding: 0;
+    display: inline-block;
+    transition: all .25s ease;
+    padding: 2vw;
+    
+}
+
+.labeledGallery li
+{
+    list-style: none;
+}
+
+.labeledGallery li p
+{
+    
+}
+
+.labeledGallery li img
+{
+    list-style: none;
+    width: 10vw;
+    height: 10vw;
+    object-fit: cover;
+    border-radius: 20%;
+    padding: 1vw;
+    transition: all .25s ease;
+    margin: auto;
+}
+
+.labeledGallery ol:hover
+{
+    transform: scale3d(1.10, 1.10, 1);
+    transition: all .25s ease;
 }
 
 
