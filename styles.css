@@ -22,7 +22,7 @@ span
 {
     display: block;
     position: fixed;
-    height: 100vh;
+    width: 100vw;
     z-index: -10;
 }
 
@@ -193,7 +193,7 @@ span
     flex-direction: column;
     background-color: white;
     height: 100vh;
-    width: 100vw;
+    width: 75vw;
 
 }
 
@@ -202,7 +202,6 @@ span
     margin: auto;
     justify-content: center;
 }
-
 
 
 
@@ -217,13 +216,18 @@ span
     color: #00e1ff;
 }
 
-.content p
+.content p, .content iframe
 {
-    padding-left: 20vw;
-    padding-right: 20vw;
-    font-size: 1vw;
+    width: 50vw;
+    height: 25vw;
+    font-size: 1.5vw;
     font-family: 'Raleway', 'Oswald', monospace;
     font-style: normal;
+}
+
+.content iframe
+{
+    transform: translate(12.5vw, -10vw);
 }
 
 .content h1
@@ -249,6 +253,29 @@ span
     width: 25vw;
 }
 
+.horizontal li
+{
+    width: 25vw;
+    height: 25vw;
+}
+
+.horizontal p
+{
+    font-size: 100%;
+    vertical-align: text-top;
+}
+
+.horizontal iframe 
+{
+    height: 25vw;
+    vertical-align: center;
+}
+
+.video
+{
+    transform: translate(-25vw, 0);
+}
+
 
 
 
@@ -257,8 +284,8 @@ span
 
 #photos
 {
-    padding-left: 8vw;
-    padding-Right: 8vw;
+    padding-left: 5vw;
+    padding-Right: 5vw;
 }
 
 #photos img
@@ -298,7 +325,7 @@ span
     padding: 0;
     display: inline-block;
     transition: all .25s ease;
-    padding: 2vw;
+    padding: 1vw;
     
 }
 
@@ -309,7 +336,17 @@ span
 
 .labeledGallery li p
 {
-    
+    position: absolute;
+	transform: translate(-10vw, 0vw);
+	padding: 0;
+    width: 10vw;
+    font-size: 1vw;
+}
+
+.labeledGallery
+{
+    margin-left: 10vw;
+    margin-right: 10vw;
 }
 
 .labeledGallery li img
@@ -319,7 +356,7 @@ span
     height: 10vw;
     object-fit: cover;
     border-radius: 20%;
-    padding: 1vw;
+    padding: 0.5vw;
     transition: all .25s ease;
     margin: auto;
 }
@@ -330,6 +367,44 @@ span
     transition: all .25s ease;
 }
 
+.labeledGallery h1
+{
+    padding-top: 6vw;
+    height: 5vw;
+}
+
+
+
+.labeledGallery.old
+{
+    margin-left: 2vw;
+    margin-right: 2vw;
+}
+
+.labeledGallery.old li img
+{
+    list-style: none;
+    width: 8vw;
+    height: 8vw;
+    object-fit: cover;
+    border-radius: 20%;
+    padding: 0.5vw;
+    transition: all .25s ease;
+    margin: auto;
+}
+
+.labeledGallery.old ol
+{
+    padding: 0;
+    display: inline-block;
+    transition: all .25s ease;
+    padding: 1vw;
+}
+
+.grey img
+{
+    filter: grayscale(100%);
+}
 
 
 
